@@ -1,0 +1,55 @@
+@import url(./variables.css);
+.card{
+    background-color:var(--bg-secondary) ;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+
+    padding: var(--space-lg);
+}
+.welcome{
+color: var(--text-primary);
+font-size: var(--text-md);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.message{
+    color: var(--text-secondary);
+font-size: var(--text-sm);
+}
+.intro-first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-first svg{
+    color: var(--bg-tertiary);
+    height: 100%;
+    width: 50px;
+}
+
+.intro-second{
+background-color: var(--bg-tertiary);
+border-radius:var(--radius-lg);
+padding: var(--space-lg);
+
+}
+.weather-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-details{
+    font-size: var(--text-xs);
+}
+.weather-second img{
+    height: 100px;
+    width: 100px;
+    margin-left: -20px;
+}
+.weather-second .temperature{
+    font-size: 30px;
+    font-weight: var(--font-bold);
+}

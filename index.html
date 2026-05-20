@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            
+            <div class="logo"><i data-lucide="code-xml"></i><span>DevBoard</span></div>
+        </header>
+        <aside>
+             
+            <nav>
+                  <p><i data-lucide="home"></i>Dashboard</p>
+        <p><i data-lucide="clipboard-check"></i>Tasks</p>
+        <p><i data-lucide="notebook-pen"></i>Notes</p>
+        <p><i data-lucide="settings"></i>Settings</p>
+            </nav>
+        </aside>
+        <main>
+            <div class="dashboard">
+                <div class="intro card">
+                    <div class="intro-first">
+                        <div>
+                            <span class="welcome">Welcome back, Dev! &#9996;</span> <br>
+                           <span class="message"> Ready to build something amazing today?</span>
+
+                        </div>
+                        <i data-lucide="code-xml"></i>
+                    </div>
+                    <div class="intro-second text-primary">
+                        <span style="color: blueviolet; ">const</span> <span class="text-primary" style="margin-left:3px;" >today</span>
+                        <span class="text-secondary">=</span>
+                        <span style="color: rgb(180, 5, 180);">new</span>
+                        <span style="color: coral;">Date</span>( );
+                        <br>
+                        <span style="color: blueviolet; ">let</span> Mindset <span class="text-secondary">=</span> <span style="color: chartreuse;">'Stay Consistent & Code'</span>;
+                    </div>
+                </div>
+                <div class="intro card">
+                    <div>
+                        <span class="welcome">Live Weather </span> <br>
+                           <span class="message location"> Hyderabad,India</span>
+                    </div>
+                    <div class="weather-second">
+                         <img src="" alt="" class="weatherIcon">
+
+                        <div>
+                            <div class="temperature-container text-primary">
+                                <div class="temperature">
+
+                                </div>
+                                <span class="temperature-description" ></span>
+                            </div>
+                            <div class="weatherDescription">
+
+                            </div>
+                        </div>
+                        <div class="weather-details text-primary">
+                            <div class="flex space-between humidity">
+                                <span class=" text-secondary">Humidity</span>
+                                <span class="value"></span>
+                            </div>
+                            <div class="flex space-between wind">
+                                <span class="  text-secondary">Wind</span>
+                                <span class="value"></span>
+                            </div>
+                            <div class=" flex space-between feelslike">
+                                <span class="text-secondary">Feels Like</span>
+                                <span class="value"></span>
+                            </div>
+                        </div>
+                    </div>
+                      
+                </div>
+                <div class="clock card"></div>
+                <div class="task card">
+                    <form onsubmit="">
+                        <input type="text" placeholder="Enter your task">
+                    </form>
+                </div>
+                <div class="notes card"></div>
+            </div>
+        </main>
+    </div>
+     <script src="./js/weather.js"></script>
+    <script>
+
+    lucide.createIcons();
+
+</script>
+</body>
+</html>

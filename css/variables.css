@@ -1,0 +1,106 @@
+:root{
+    --bg-base: #0D1117;
+    --bg-secondary: #161B22;
+    --bg-tertiary: #1E242D;
+    --bg-elevated: #252C38;
+    --bg-overlay: #0D1117CC;
+
+    --border-default: #2A3340;
+    --border-hover: #3A4353;
+    --divider: #20262E;
+    --divider-light: #2A3340;
+   
+  --primary: #7C3AED;
+    --primary-hover: #6D28D9;
+    --primary-soft: #A78BFA;
+    --primary-dark: #5B21B6;
+
+--text-primary: #E5E7EB;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
+    --text-subtle: #D4D4D8;
+    --text-light: #F4F4F5;
+    
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --info: #3B82F6;
+
+     --cyan: #06B6D4;
+    --pink: #EC4899;
+    --indigo: #8B5CF6;
+    --emerald: #10B981;
+    --amber: #F59E0B;
+
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
+
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.4);
+
+     --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+
+     --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    --transition-fast: 0.2s ease;
+
+    --transition-normal: 0.3s ease;
+
+    --transition-slow: 0.5s ease;
+
+     /* ========================================
+       FONT SIZES
+    ======================================== */
+
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-md: 18px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+    --text-2xl: 32px;
+    --text-3xl: 40px;
+
+
+    /* ========================================
+       FONT WEIGHTS
+    ======================================== */
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+
+    /* ========================================
+       LINE HEIGHTS
+    ======================================== */
+
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-loose: 1.8;
+
+
+}
+
+.text-primary{
+ color: var(--text-primary);
+}
+.text-secondary{
+    color: var(--text-muted);
+}
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+
+}
