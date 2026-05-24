@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/component.css">
-    <link rel="stylesheet" href="./css/variables.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -80,13 +80,48 @@
                     </div>
                       
                 </div>
-                <div class="clock card"></div>
-                <div class="task card">
-                    <form onsubmit="">
-                        <input type="text" placeholder="Enter your task">
-                    </form>
+                <div class="clock card">
+                    <div class="intro-first clock-container">
+                        <div class="clock-container">
+                            <span class="welcome">Clock</span> 
+                            <div class="times">
+                                <span class="time"></span>
+                             <span class="ampm"></span>
+                            </div>
+                            <span class="date"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="notes card"></div>
+                <div class="task card">
+                    <div class="task-header">
+                    <div class="heading-count">
+                        <div class="heading">Kanban Board</div>
+                        <div class="task-count">7 tasks</div>
+                    </div>
+                        <button class="newTask">+ New Task</button>
+                    </div>
+                    <div class="task-columns">
+                        <div class="task-column todo card">
+                            <div class="column-header">To Do</div>
+                            <div class="todo-list">
+
+                            </div>
+                        </div>
+                        <div class="task-column inprogress card">
+                            <div class="column-header">In Progress</div>
+                            <div class="inprogress-list">
+
+                            </div>
+                        </div>
+                        <div class="task-column done card">
+                            <div class="column-header">Done</div>
+                            <div class="done-list">
+
+                            </div>
+                            
+                    </div>
+                </div>
+                
             </div>
         </main>
     </div>
