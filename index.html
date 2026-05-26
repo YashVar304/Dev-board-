@@ -101,21 +101,21 @@
                         <button class="newTask">+ New Task</button>
                     </div>
                     <div class="task-columns">
-                        <div class="task-column todo card">
-                            <div class="column-header">To Do</div>
-                            <div class="todo-list">
+                        <div class="task-column  card">
+                            <div class="column-header todo">To Do</div>
+                            <div class="todo-list" draggable="true">
 
                             </div>
                         </div>
-                        <div class="task-column inprogress card">
-                            <div class="column-header">In Progress</div>
-                            <div class="inprogress-list">
+                        <div class="task-column  card">
+                            <div class="column-header inprogress">In Progress</div>
+                            <div class="inprogress-list" draggable="true">
 
                             </div>
                         </div>
-                        <div class="task-column done card">
-                            <div class="column-header">Done</div>
-                            <div class="done-list">
+                        <div class="task-column  card">
+                            <div class="column-header done">Done</div>
+                            <div class="done-list" draggable="true">
 
                             </div>
                             
@@ -124,6 +124,48 @@
                 
             </div>
         </main>
+    </div>
+    <div class="task-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="task-modal-content card">
+            <button type="button" class="modal-close" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <h2 id="modal-title">Add New Task</h2>
+            <form class="task-form">
+                <label>
+                    Title
+                    <input type="text" class="task-title-input" placeholder="Enter task title" required />
+                </label>
+                <label>
+                    Description
+                    <textarea class="task-description-input" placeholder="Enter task description" rows="4"></textarea>
+                </label>
+                <div class="task-form-row">
+                    <label>
+                        Priority
+                        <select class="task-priority-select">
+                            <option value="High">High</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                    </label>
+                    <label>
+                        Status
+                        <select class="task-status-select">
+                            <option value="todo">To Do</option>
+                            <option value="inprogress">In Progress</option>
+                            <option value="done">Done</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="modal-cancel">Cancel</button>
+                    <button type="submit" class="modal-submit">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
     </div>
      <script src="./js/weather.js"></script>
     <script>
