@@ -26,6 +26,24 @@ const taskCount = document.querySelector(".task-count");
 let todos=JSON.parse(localStorage.getItem("todos")) || [];
 const todoItem= document.querySelectorAll(".todo-item");
 const modalButton = document.querySelector(".modal-submit");
+const addTaskButtons = document.querySelectorAll(".add-task-button");
+const menuToggle = document.querySelector(".menu-toggle");
+const aside = document.querySelector("aside");
+
+menuToggle.addEventListener("click", () => {
+    aside.classList.toggle("open");
+    document.querySelector(".mobile-overlay").classList.toggle("active");
+    handleMobileOverlayClick();
+});
+function handleMobileOverlayClick(){
+    const mobileOverlay = document.querySelector(".mobile-overlay");
+    if(mobileOverlay){
+        mobileOverlay.addEventListener("click", () => {
+            aside.classList.remove("open");
+            mobileOverlay.classList.remove("active");
+        });
+    }
+}
 // Convert date strings back to Date objects
 todos = todos.map(todo => ({
     ...todo,
@@ -395,6 +413,16 @@ editTodo=(id)=>{
         });
     }
 };
+
+addTaskButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        const statuses = ["todo", "inprogress", "done"];
+        if(taskStatus) {
+            taskStatus.value = statuses[index];
+        }
+        openTaskModal();
+    });
+});
 
 setupDropTarget(todoList, "todo");
 setupDropTarget(inprogressList, "inprogress");

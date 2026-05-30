@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/component.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    
     <div class="layout">
+
         <header>
+            <button class="menu-toggle">
+
+            <i data-lucide="menu"></i>
+
+        </button>
             
-            <div class="logo"><i data-lucide="code-xml"></i><span>DevBoard</span></div>
         </header>
+        <div class="mobile-overlay">
+            </div>
         <aside>
-             
+             <div class="logo">
+                <button class="menu-toggle">
+
+            <i data-lucide="menu"></i>
+
+        </button><i data-lucide="code-xml"></i><span>DevBoard</span></div>
             <nav>
-                  <p><i data-lucide="home"></i>Dashboard</p>
-        <p><i data-lucide="clipboard-check"></i>Tasks</p>
-        <p><i data-lucide="notebook-pen"></i>Notes</p>
-        <p><i data-lucide="settings"></i>Settings</p>
+                  <button><i data-lucide="home"></i>Dashboard</button>
+        <button><i data-lucide="clipboard-check"></i>Tasks</button>
+        <button><i data-lucide="notebook-pen"></i>Notes</button>
+        <button><i data-lucide="settings"></i>Settings</button>
             </nav>
         </aside>
         <main>
@@ -103,22 +116,25 @@
                     <div class="task-columns">
                         <div class="task-column  card">
                             <div class="column-header todo">To Do</div>
-                            <div class="todo-list" draggable="true">
+                            <div class="todo-list">
 
                             </div>
+                            <button class="add-task-button">+ Add Task</button>
                         </div>
                         <div class="task-column  card">
                             <div class="column-header inprogress">In Progress</div>
                             <div class="inprogress-list" draggable="true">
 
                             </div>
+                            <button class="add-task-button">+ Add Task</button>
                         </div>
                         <div class="task-column  card">
                             <div class="column-header done">Done</div>
                             <div class="done-list" draggable="true">
 
                             </div>
-                            
+                            <button class="add-task-button">+ Add Task</button>
+                        </div>
                     </div>
                 </div>
                 
@@ -165,8 +181,7 @@
             </form>
         </div>
     </div>
-    
-    </div>
+
      <script src="./js/weather.js"></script>
     <script>
 
